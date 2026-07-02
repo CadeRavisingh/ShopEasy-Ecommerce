@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css"></link>
+    <title>Checkout </title>
+</head>
+<body>
+    <header>
+        <h1>ShopEasy</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login </a>
+    </nav>
+    <div class="container">
+        <h2>Delivery Address</h2>
+        <from>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your Full Name" required>
+             <label>mobile Number </label>
+            <input type="tel" placeholder="Enter your Mobile number" required>
+            <label >Full Address</label>
+            <textarea rows="4" placeholder="House NO,Street , City, States, PIN Code" required></textarea>
+            <label>Payment Method</label>
+            <select required>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <optionn>Net Banking</optionn>
+            </select>
+            <div class="summary">
+                <h2>Order Summary</h2>
+                <p> Smart Watch x 1: ₹2,499</p>
+                <p>Headphones x 1 : ₹1,499</p>
+                <hr><br>
+                <h3> Total Amount : ₹3,998</h3>
+            </div>
+            <a href=" order-success.html"
+            <button class="place-order" type="Submit">Place Order</button>
+            ></a>
+        </from>
+    </div>
+    <footer>
+        <p>@ 2026 ShopEasy | All Right Reserved</p>
+    </footer>
+     <script src="static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css"></link>
+    <title>Products </title>
+</head>
+<body>
+    <header>
+        <h1>ShopEasy</h1>
+        <p>Our Products</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Lonin</a>
+    </nav>
+<div class="search-box">
+
+<form action="/products" method="GET">
+
+<input
+type="text"
+name="search"
+placeholder="Search products..."
+value="{{ request.args.get('search','') }}">
+
+<button type="submit">Search</button>
+
+</form>
+
+</div>
+
+    <div class="products">
+        <input type="text" placeholder="Search Product ...">
+    </div>
+    <section class="products">
+        <div class="card">
+            <a href="products-detail.html">
+            <img src="static/image/smart watch.webp" alt="Product "></a>
+            <h3> Smart Watch</h3>
+            <p class="price"> ₹2,499</p>
+            <p> premium smartwatch with fitness tracking.</p>
+            <div class="btn">
+                <button class="cart">Add to Cart</button>
+                <button class="buy">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="static/image/hardphone.webp" alt="Product">
+            <h3>Wireless Headphone</h3>
+            <p class="price"> ₹1,499</p>
+            <p>Noise Cancellation  with high qulity sound</p>
+            <div class="btn">
+                <button class="cart">Add to Cart</button>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="static/image/runingshoesdownload.avif" alt="Product">
+            <h3>Runing shose</h3>
+            <p class="price">₹2,999</p>
+            <p>Comfortable and lightweight spots shoes.</p>
+            <div class="btn">
+                <button class="cart">Add to Cart</button>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="static/image/jblspeakerdownload.avif" alt="Product">
+            <h3>Bluetooth speaker</h3>
+            <p class="price">₹1,999</p>
+            <p>Protable speaker with deep base</p>
+            <div class="btn">
+                <button class="cart">Add to Cart </button>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>@ 2026 ShopEasy. All Right Reserved </p>
+    </footer>
+      <script src="static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Orders</title>
+</head>
+<body>
+
+<h1>Admin Order Management</h1>
+
+<table border="1" cellpadding="10">
+<tr>
+    <th>ID</th>
+    <th>Customer</th>
+    <th>Product</th>
+    <th>Total</th>
+    <th>Status</th>
+    <th>Action</th>
+</tr>
+
+{% for order in orders %}
+<tr>
+    <td>{{ order.id }}</td>
+    <td>{{ order.customer_name }}</td>
+    <td>{{ order.product_name }}</td>
+    <td>₹{{ order.total }}</td>
+    <td>{{ order.status }}</td>
+    <td>
+        <a href="/order-status/{{ order.id }}/Pending">Pending</a> |
+        <a href="/order-status/{{ order.id }}/Shipped">Shipped</a> |
+        <a href="/order-status/{{ order.id }}/Delivered">Delivered</a> |
+        <a href="/delete-order/{{ order.id }}">Delete</a>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
